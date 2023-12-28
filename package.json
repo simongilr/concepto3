@@ -18,7 +18,7 @@
     "electron-updater": "^4.3.9"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "appId": "com.github.simongilr.concepto",
     "afterSign": "./build/notarize.js",
     "mac": {
       "category": "your.app.category.type"
@@ -38,7 +38,7 @@
         {
           "provider": "github",
           "owner": "simongilr",
-          "repo": "https://github.com/simongilr/concept.git",
+          "repo": "concepto",
           "token": "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"
         }
       ]
