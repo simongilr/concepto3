@@ -5,7 +5,8 @@
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
-    "publish": "electron-builder -p always"
+    "publish": "electron-builder -p always",
+    "start": "electron main.js"
   },
   "devDependencies": {
     "electron": "^14.0.1",
@@ -23,7 +24,24 @@
       "category": "your.app.category.type"
     },
     "win": {
-      "target": "nsis"
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "path/to/your/icon.ico",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "simongilr",
+          "repo": "https://github.com/simongilr/concept.git",
+          "token": "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"
+        }
+      ]
     },
     "nsis": {
       "oneClick": false
