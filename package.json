@@ -39,16 +39,41 @@
           "provider": "github",
           "owner": "simongilr",
           "repo": "concepto",
-          "token": "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"
+          "token": "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"
         }
       ]
     },
-    "nsis": {
-      "oneClick": false
-    },
     "linux": {
       "category": "your.app.category.type",
-      "target": "AppImage"
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "path/to/your/icon.png",
+      "executableName": "concepto",
+      "desktop": {
+        "Name": "Concepto",
+        "Comment": "Your app description"
+      },
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "simongilr",
+          "repo": "concepto",
+          "token": "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"
+        }
+      ]
     }
+    
+
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
