@@ -1,11 +1,11 @@
 {
   "name": "electron-updater-example",
-  "version": "0.8.2",
+  "version": "0.8.4",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
-    "publish": "electron-builder -p always",
+    "publish": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN electron-builder -p always",
     "start": "electron main.js"
   },
   "devDependencies": {
@@ -39,8 +39,7 @@
         {
           "provider": "github",
           "owner": "simongilr",
-          "repo": "concepto",
-          "token": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN"
+          "repo": "concepto"
         }
       ]
     },
@@ -65,8 +64,7 @@
         {
           "provider": "github",
           "owner": "simongilr",
-          "repo": "concepto",
-          "token": "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"
+          "repo": "concepto"
         }
       ]
     }
