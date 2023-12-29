@@ -9,6 +9,7 @@
     "start": "electron main.js"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "electron": "^14.0.1",
     "electron-builder": "^22.11.7",
     "electron-notarize": "^1.1.1"
@@ -39,7 +40,7 @@
           "provider": "github",
           "owner": "simongilr",
           "repo": "concepto",
-          "token": "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"
+          "token": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN"
         }
       ]
     },
@@ -69,8 +70,6 @@
         }
       ]
     }
-    
-
   },
   "publishConfig": {
     "access": "public",
