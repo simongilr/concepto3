@@ -118,6 +118,10 @@ app.on('ready', function()  {
   autoUpdater.checkForUpdatesAndNotify();
 });
 
+autoUpdater.on('update-downloaded', (info) => {
+   autoUpdater.quitAndInstall();  
+})
+
 //-------------------------------------------------------------------
 // Auto updates - Option 2 - More control
 //
